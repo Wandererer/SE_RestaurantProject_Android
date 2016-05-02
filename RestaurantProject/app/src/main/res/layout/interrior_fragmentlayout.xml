@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/interriorScrollView"
+        android:scrollbars="horizontal|vertical"
+        android:scrollbarStyle="outsideInset"
+
+        android:fillViewport="true"
+        >
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/interriorHorizontalScrollView"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="horizontal|vertical"
+
+           >
+
+            <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+
+
+            />
+                <!--android:src="@drawable/whitebackground"-->
+
+
+
+            <!--
+                       <com.example.jk.restaurantproject.myView
+                           android:layout_width="match_parent"
+
+                           android:layout_height="match_parent"
+
+                           />
+           -->
+
+        </HorizontalScrollView>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="TABLEID"
+        android:id="@+id/orderTableIdTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/orderTableIdTextView"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout">
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="추가"
+
+            android:id="@+id/orderListAddButton"
+            android:onClick="onClick"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="갱 신"
+            android:id="@+id/orderListUpdateCheckBox"
+            android:onClick="onClick"
+            android:layout_marginStart="33dp"
+            android:layout_alignTop="@+id/orderListDeleteCheckBox"
+            android:layout_toEndOf="@+id/orderListAddButton" />
+
+        <CheckBox
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제 거"
+            android:onClick="onClick"
+            android:id="@+id/orderListDeleteCheckBox"
+            android:layout_marginStart="28dp"
+
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/orderListUpdateCheckBox" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="초기화"
+            android:id="@+id/orderListCleanUpButton"
+            android:layout_centerVertical="true"
+            android:onClick="onClick"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:id="@+id/orderContentListView"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/orderContentListView"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="값 : "
+            android:id="@+id/orderPriceTextView"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="계   산"
+            android:id="@+id/orderFinishButton"
+            android:onClick="onClick"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

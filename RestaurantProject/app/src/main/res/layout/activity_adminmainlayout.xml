@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="RestaurantName"
+            android:id="@+id/mainLayoutRestaurantName"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:id="@+id/mainRestaurantPicture"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인 테 리 어"
+            android:id="@+id/interriorButton"
+            android:onClick="onClick"
+            android:layout_gravity="left|center"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="메뉴 관리"
+
+            android:id="@+id/menuManagingButton"
+            android:layout_gravity="center_vertical"
+            android:onClick="onClick"
+            android:layout_alignTop="@+id/interriorButton"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주      문"
+            android:id="@+id/adminOrderButton"
+            android:onClick="onClick"
+            android:layout_gravity="center|right"
+            android:layout_centerVertical="true"
+            android:layout_alignTop="@+id/interriorButton"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:text="직원아이디"
+            android:id="@+id/staffIdSettinButton"
+            android:layout_gravity="center"
+            android:onClick="onClick"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/reservationManageButton"
+            android:layout_marginStart="54dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="예약 관리"
+            android:id="@+id/reservationManageButton"
+            android:layout_gravity="center"
+            android:onClick="onClick"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="61dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="예약 변경"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/linearLayout6"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_centerHorizontal="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=" 이         름  :  "
+            android:layout_gravity="center"
+            android:id="@+id/reservationUpdateCustomerNameTextView"
+            android:layout_below="@+id/linearLayout6"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reservationUpdateCustomerName"
+            android:text="이   름"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_below="@+id/linearLayout6"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout7">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=" 핸드폰번호 :  "
+            android:layout_gravity="center"
+            android:id="@+id/reservationUpdatePhoneNumberTextView" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="핸드폰 번호"
+           android:id="@+id/reservationUpdatePhoneNumber"
+           android:layout_gravity="center"
+           android:textSize="20dp"
+           />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/linearLayout7"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="테이블 이름"
+            android:id="@+id/reservationUpdateTableNameTextView"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="54dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="선택"
+            android:onClick="onClick"
+            android:id="@+id/reservationUpdateTableSelectButton"
+            android:layout_marginRight="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="예약 시간 선택"
+            android:textSize="20dp"
+            android:id="@+id/textView6"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <DatePicker
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:textSize="10sp"
+            android:calendarViewShown="false"
+            android:id="@+id/reservationUpdateDatePicker"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true" />
+
+        <TimePicker
+            android:layout_width="210dp"
+
+            android:layout_height="150dp"
+            android:id="@+id/reservationUpdateTimePicker"
+
+            android:layout_alignTop="@+id/reservationUpdateDatePicker"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:text="변경 하기"
+            android:id="@+id/allReservationUpdateButton"
+            android:onClick="onClick"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jk.restaurantproject">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera2"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false">
+
+
+        <activity android:name=".InterriorActivity"
+
+            android:screenOrientation="landscape"
+            >
+
+
+        </activity>
+
+        <activity android:name=".LoginActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".AdministratorEnrollActivity"  android:screenOrientation="portrait"
+
+            />
+
+        <activity android:name=".SearchRestaurantActivity"  android:screenOrientation="portrait">
+
+
+        </activity>
+
+        <activity android:name=".CustomerEnrollActivity"  android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".AdminMainViewActivity"  android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"> </activity>
+
+        <activity android:name=".TableSettingView"  android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation">
+
+
+        </activity>
+
+        <activity android:name=".AdminMenuManagementActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".FirstMenuManageActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".MakeNewStaffIdOrFindActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".AdminReservationManageActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ReservationInsertActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".TableChooseActivity"
+
+            android:screenOrientation="landscape"/>
+
+        <activity android:name=".testActivity"
+            android:screenOrientation="landscape"/>
+
+        <activity android:name=".CustomerMainViewLayout"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".CustomerInterriorViewActivity"
+            android:screenOrientation="landscape"/>
+
+        <activity android:name=".ReservationUpdateActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".CustomerMenuViewActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".CustomerMenuActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".CustomerReservationActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".CustomerReservationConfirmActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".OrderTableList"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".TableOrderList"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".OrderCourseActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".OrderMenuActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <activity android:name=".StaffMainLayout"
+            android:screenOrientation="portrait"/>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/interriorButtonhorizontalScrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tableButton"
+                android:onClick="onClick"
+                android:src="@drawable/table"/>
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/gwallButton"
+                android:onClick="onClick"
+                android:src="@drawable/gwall"/>
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/swallButton"
+                android:onClick="onClick"
+                android:src="@drawable/swall"/>
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/gwindowButton"
+                android:onClick="onClick"
+                android:src="@drawable/gwindow"/>
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/swindowButton"
+                android:onClick="onClick"
+                android:src="@drawable/swindow"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="삭제"
+                android:id="@+id/eraseCheckBox"
+                android:onClick="onClick"
+                android:layout_gravity="center" />
+
+            <Button android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="저장"
+                android:onClick="onClick"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/interriorSaveButton"
+                />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/interriorScrollView"
+        android:scrollbars="horizontal|vertical"
+        android:scrollbarStyle="outsideInset"
+
+        android:fillViewport="true"
+        >
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/interriorHorizontalScrollView"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="horizontal|vertical"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+
+
+                />
+            <!--android:src="@drawable/whitebackground"-->
+
+
+
+            <!--
+                       <com.example.jk.restaurantproject.myView
+                           android:layout_width="match_parent"
+
+                           android:layout_height="match_parent"
+
+                           />
+           -->
+
+        </HorizontalScrollView>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

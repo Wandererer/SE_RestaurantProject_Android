@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/interriorButtonhorizontalScrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tableButton"
+                android:src="@drawable/table"/>
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/gwallButton"
+                android:src="@drawable/gwall"/>
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/swallButton"
+                android:src="@drawable/swall"/>
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/gwindowButton"
+                android:src="@drawable/gwindow"/>
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/swindowButton"
+                android:src="@drawable/swindow"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="삭제"
+                android:id="@+id/eraseCheckBox"
+                android:layout_gravity="center" />
+
+            <Button android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="저장"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/interriorSaveButton"
+                />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+</LinearLayout>
